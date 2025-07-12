@@ -1,0 +1,33 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+.gallery-item {
+    /* width: calc((100% - 24px) / 3); */
+    /* 3 елементи в рядок з урахуванням 2 проміжків по 24px */
+    height: 100%;
+    /* Фіксована висота */
+    overflow: hidden;
+}
+
+.gallery-link {
+    display: block;
+    height: 100%;
+}
+
+.gallery-image {
+    width: 510px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+    cursor: zoom-in;
+}
